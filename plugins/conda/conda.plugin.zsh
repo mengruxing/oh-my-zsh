@@ -9,3 +9,4 @@ function activate-conda-venv() {
 }
 
 alias acvenv='activate-conda-venv'
+
