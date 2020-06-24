@@ -10,7 +10,7 @@ prompt_clock() {
 build_prompt() {
   RETVAL=$?
   prompt_status
-  # prompt_clock
+  prompt_clock
   prompt_virtualenv
   prompt_aws
   prompt_context
@@ -20,9 +20,3 @@ build_prompt() {
   prompt_hg
   prompt_end
 }
-
-build_rprompt() {
-  echo -n "%{%F{240}%}\$(date +'%H:%M:%S')]"
-}
-
-RPROMPT="$(build_rprompt)"
